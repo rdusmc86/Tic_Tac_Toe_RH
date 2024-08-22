@@ -77,7 +77,7 @@ fun GameScreen(
                 .background(Color.White),
             contentAlignment = Alignment.Center
         ) {
-            BoardBase()
+            BoardBase() //load game board
             LazyVerticalGrid(
                 modifier = Modifier
                     .fillMaxWidth(0.9f)
