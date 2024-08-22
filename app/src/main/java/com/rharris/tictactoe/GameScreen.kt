@@ -160,7 +160,7 @@ fun GameScreen(
     }
 }
 
-@Composable
+@Composable //takes game state and draws appropriate line when player wins
 fun DrawVictoryLine(
     state: GameState
 ) {
