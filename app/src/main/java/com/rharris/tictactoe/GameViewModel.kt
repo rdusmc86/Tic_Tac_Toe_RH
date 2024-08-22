@@ -92,6 +92,7 @@ class GameViewModel: ViewModel() {
         }
     }
 
+    //checks for win conditions
     private fun checkForVictory(boardValue: BoardCellValue): Boolean {
         when {
             boardItems[1] == boardValue && boardItems[2] == boardValue && boardItems[3] == boardValue -> {
@@ -130,6 +131,7 @@ class GameViewModel: ViewModel() {
         }
     }
 
+    //disallows selection of boxes when all have been used
     private fun hasBoardFull(): Boolean {
         if (boardItems.containsValue(BoardCellValue.NONE)) return false
         return true
