@@ -17,7 +17,7 @@ import androidx.compose.ui.graphics.drawscope.Stroke
 import com.rharris.tictactoe.ui.theme.Aqua
 import com.rharris.tictactoe.ui.theme.Orange
 
-@Composable
+@Composable //draw game board
 fun BoardBase() {
     Canvas(
         modifier = Modifier
@@ -55,7 +55,7 @@ fun BoardBase() {
     }
 }
 
-@Composable
+@Composable //draw 'X'
 fun Cross() {
     Canvas(
         modifier = Modifier
@@ -79,7 +79,7 @@ fun Cross() {
     }
 }
 
-@Composable
+@Composable //draw 'O'
 fun Circle() {
     Canvas(
         modifier = Modifier
@@ -93,6 +93,7 @@ fun Circle() {
     }
 }
 
+//next eight functions draw lines appearing for player victory
 @Composable
 fun WinHorizontalLineOne() {
     Canvas(modifier = Modifier.size(300.dp)) {
